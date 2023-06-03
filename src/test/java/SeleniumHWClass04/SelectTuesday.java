@@ -14,11 +14,29 @@ public class SelectTuesday extends CommonMethods {
         openBrowserAndLaunchApplication(url,browser);
         Thread.sleep(4000);
         WebElement days= driver.findElement(By.xpath("//select[@class='form-control']"));
-        Select sel = new Select(days);
+        singleSelectFromDropDown(days,"Monday");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       /* Select sel = new Select(days);
         sel.selectByIndex(3);
         Thread.sleep(4000);
         sel.selectByVisibleText("Thursday");
         Thread.sleep(4000);
-        sel.selectByValue("Friday");
+        sel.selectByValue("Friday");*/
     }
 }

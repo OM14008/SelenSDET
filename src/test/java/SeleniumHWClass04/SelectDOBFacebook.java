@@ -22,5 +22,6 @@ public class SelectDOBFacebook extends CommonMethods {
         WebElement year = driver.findElement(By.xpath("//select[@name='birthday_year']"));
         Select selYear = new Select(year);
         selYear.selectByIndex(48);
+
     }
 }
